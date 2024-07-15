@@ -5,3 +5,7 @@ class State(rx.state):
 
   def index() -> rx.Component:
     return rx.text("Hola Reflex!")
+  
+  app = rx.App
+  app.add_page(index)
+  app._compile()
